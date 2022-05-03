@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>.: MF - Orçamento :.</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p>MF</p>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/omarcelofelix/">instagram</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:felixmarcelo.mf@gmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/61999174900">WhatsApp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            
+            <div class="name">
+                <h1>Marcelo Felix</h1>
+                <h5>Cantor BRASILIENSE</h5>
+            </div>
+
+            <div onclick="displayAbout()" class="arrow">                
+                <i id = animation class="fa-solid fa-sort-down"></i>
+                <p>Saiba mais</p>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Olá! meu nome é Marcelo Felix, sou um cantor natural de brasília e, do meu jeito, quero espalhar a nossa música por esse mundão. MÚSICA BRASILEIRA! MPB, forró, axé, reggae, sabinha e tudo que a gente tem de bom. Tem coisa melhor? Então ARROCHA e clica na opção que mais combina com o seu evento que eu te faço um orçamento.  
+                </p>
+
+                <div class = fleximage>
+                    <div onclick="price1displayAbout()" class="option1">
+                        <p>OPÇÃO 1: Voz e violão (solo)</p>
+                        <img src="./FRN_8563.jpg" alt="">
+                        <div style="display: none;" id="opt1">
+                            <p>R$ 500,00</p>
+                        </div>
+                    </div>
+                    <div onclick="price2displayAbout()" class="option2">
+                        <p>OPÇÃO 2: Voz, violão e percuteria (dueto)</p>
+                        <img src="./FRN_8508.jpg" alt="">
+                        <div style="display: none;" id="opt2">
+                            <p>R$ 700,00</p>
+                        </div>
+                    </div>                    
+                </div> 
+                <div>
+                    <p>Os shows têm duração de 2 horas e 30min até 3 horas, com ou sem intervalo. Se o objetivo for criar um climinha gostoso de lual e muita música boa e nostálgica, pode ir na opção 1 SEM MEDO. Agora se quiser mais animação, pro pessoal dançar e cantar junto, com certeza vai querer a opção 2 ou TRIO. VAMOS? </p>
+                </div>
+                <div class="obs">
+                    <p>Temos também opção de TRIO: Voz, violão, percuteria e teclado (consultar orçamento por WhatsApp).</p>  
+                </div>            
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Faça seu orçamento personalizado por Whats!</p>                    
+                </div>
+                <form action="">
+                    <!-- <input type="text" placeholder=" Mande um alô que eu respondo rapidinho :)"> -->
+                    <!-- <button>enviar!</button> -->
+                    <a target="blank" href="https://wa.me/61999174900?text=Olá,%20Marcelinho!%20Eu%20gostaria%20de%20um%20orçamento%20personalizado." class="button">Mandar um alô!</a>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation")
+            arrow.classList.toggle("rotate")
+            var display = document.getElementById("about")
+            display.classList.toggle("active")
+        }       
+
+    </script>
+
+    <script>
+        function price1displayAbout() {
+            var display = document.getElementById("opt1")
+            display.classList.toggle("active")
+        }
+
+        function price2displayAbout() {
+            var display = document.getElementById("opt2")
+            display.classList.toggle("active")
+        }
+    </script>
+
+    
+</body>
+</html>

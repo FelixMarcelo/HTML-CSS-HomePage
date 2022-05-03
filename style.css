@@ -1,0 +1,221 @@
+/* ALL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(213, 222, 231);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BODY */
+body {    
+    background: url(./FRN_8426.jpg) no-repeat center center fixed;
+    background-size: cover;    
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgb(213, 222, 231);
+}
+
+header ul {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    display: flex; 
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    color: rgb(213, 222, 231);
+    transition: 200ms;
+}
+
+header ul li a:hover {
+    color: #dfc530;
+    text-decoration: underline;
+}
+
+header div p {
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: underline;    
+    color: rgb(213, 222, 231);   
+}
+
+/* MAIN */
+main {    
+    padding-top: 250px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+#about p {
+    max-width: 500px;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* OPTIONS (IMAGES) */
+.fleximage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleximage div {
+    border: none;
+    /* background-color: #000;  */
+    border-radius: 5px 5px 5px 5px; 
+    margin: 15px;     
+}
+
+.fleximage img {
+    max-width: 250px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+        
+}
+
+.fleximage img:hover {
+    border: 1px solid rgb(213, 222, 231);
+}
+
+.fleximage div p {    
+    text-align: center;
+    font-size: smaller;
+}
+
+.fleximage div div p {
+    text-decoration: underline;
+}
+
+.obs {
+    font-size: small;
+    font-style: italic;
+}
+
+/* FORMS */
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* .form input {
+    width: 50%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+} */
+
+.form form {
+    width: 30%;
+    transition: 200ms;
+    color: rgb(213, 222, 231);
+    background: linear-gradient(to right, #dfc530 50%, #a09038 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    /* margin-left: 0px;
+    margin-top: 5px; */
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.form form a:hover {
+    background-position: left bottom;
+    color: #000;    
+    cursor: pointer;    
+}
+
+/* ANIMATION */
+.arrow i {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 0.5s steps(5, start) infinite !important;    
+}
+
+.arrow p {
+    text-decoration: underline;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden ;
+    }
+}
+
+.rotate {
+    transform: rotateX(180deg);
+    transition: 300ms;
+}
+
+
+/* functions */
+
+#animation {
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+    transition: 500ms;
+}
+
+@media only screen and (max-width: 768px){
+    .form form {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header ul {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .container .name h1 {
+        font-size: 40px;
+    }
+
+    .fleximage img {
+        max-width: 150px;
+    }
+
+    .fleximage div p {
+        font-size: 12px;
+    }    
+
+    .form p {
+        font-size: 13px;
+    }
+
+    .form form {
+        width: 100%;
+    }
+    
+}
