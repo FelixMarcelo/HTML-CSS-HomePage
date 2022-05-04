@@ -38,17 +38,17 @@
 
             <div onclick="displayAbout()" class="arrow">                
                 <i id = animation class="fa-solid fa-sort-down"></i>
-                <p>Saiba mais</p>
+                <p>Saiba mais sobre o show</p>
             </div>
 
-            <div style="display: none;" id="about">
-                <p>
-                    Olá! meu nome é Marcelo Felix, sou um cantor natural de brasília e, do meu jeito, quero espalhar a nossa música por esse mundão. MÚSICA BRASILEIRA! MPB, forró, axé, reggae, sambinha e tudo que a gente tem de bom. Tem coisa melhor? Então ARROCHA e clica na opção que mais combina com o seu evento que eu te faço um orçamento.  
-                </p>
+            <div style="display: none;" id="hide">
+                <div id="about">
+                    <p>Olá! meu nome é Marcelo Felix, sou um cantor natural de brasília e, do meu jeito, quero espalhar a nossa música por esse mundão. MÚSICA BRASILEIRA! MPB, forró, axé, reggae, sambinha e tudo que a gente tem de bom. Tem coisa melhor? Então ARROCHA e clica na opção que mais combina com o seu evento que eu te faço um orçamento.</p>
+                </div>
 
                 <div class = fleximage>
                     <div onclick="price1displayAbout()" class="option1">
-                        <p>OPÇÃO 1: Voz e violão (solo)</p>
+                        <div class="op"><p>OPÇÃO 1: Voz e violão (solo)</p></div>
                         <div class="instruction"><p>Clica na foto pra saber o valor</p></div>
                         <img src="./FRN_8563.jpg" alt="">
                         <div class="price" style="display: none;" id="opt1">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div onclick="price2displayAbout()" class="option2">
-                        <p>OPÇÃO 2: Voz, violão e percuteria (dueto)</p>
+                        <div class="op"><p>OPÇÃO 2: Voz, violão e percuteria (dueto)</p></div>
                         <div class="instruction"><p>Clica nessa também, o gerente enlouqueceeu</p></div>
                         <img src="./FRN_8508.jpg" alt="">
                         <div class="price" style="display: none;" id="opt2">
@@ -64,7 +64,7 @@
                         </div>
                     </div>                    
                 </div> 
-                <div>
+                <div id="about">
                     <p>Os shows têm duração de 2 horas e 30min até 3 horas, com ou sem intervalo. Se o objetivo for criar um climinha gostoso de luau e muita música boa e nostálgica, pode ir na opção 1 SEM MEDO. Agora se quiser mais animação, pro pessoal dançar e cantar junto, com certeza vai querer a opção 2 ou TRIO. VAMOS? </p>
                 </div>
                 <div class="obs">
@@ -91,7 +91,7 @@
         function displayAbout() {
             var arrow = document.getElementById("animation")
             arrow.classList.toggle("rotate")
-            var display = document.getElementById("about")
+            var display = document.getElementById("hide")
             display.classList.toggle("active")
         }       
 
