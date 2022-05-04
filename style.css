@@ -105,7 +105,11 @@ main {
     font-size: smaller;
 }
 
-.fleximage div div p {
+.fleximage div .instruction {
+    font-size: 10px;
+}
+
+.fleximage div .price {
     text-decoration: underline;
 }
 
