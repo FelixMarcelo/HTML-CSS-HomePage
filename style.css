@@ -101,7 +101,7 @@ main {
 }
 
 .fleximage div .op {    
-    text-align: center;
+    text-align: left;
     font-size: smaller;
     cursor: pointer;
 }
